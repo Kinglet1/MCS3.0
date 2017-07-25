@@ -1,29 +1,44 @@
+<!-- Необходимо отцентрировать иконку внутри пункта меню с помощью position: absolute -->
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Girlpower</title>
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu__item {
+            padding: 40px;
+            border-bottom: 1px solid gray;
+            font-size: 20px;
+        }
+
+        /* Здесь будет ваш код */
+    </style>
 </head>
 
-<!--
-    1. Покрасить body в оранжевый цвет (orange)
-    2. Для всех элементов установить размер шрифта 20 пикселей
-    3. Для элементов, выровненных по центру, сделать текст красным
-    4. Для всех элементов с классом bold сделать шрифт жирным
-    5. Для элемента с id cursive сделать шрифт курсивным
--->
-
 <body>
-    <h1 align="center">Red page title</h1>
+<ul class="menu">
+    <li class="menu__item">
+        <i class="fa fa-diamond fa-3x"></i>
+        Diamonds
+    </li>
+    <li class="menu__item">
+        <i class="fa fa-coffee fa-3x" aria-hidden="true"></i>
+        Coffee
+    </li>
+    <li class="menu__item">
+        <i class="fa fa-bell fa-3x" aria-hidden="true"></i>
+        Bells
+    </li>
+</ul>
 
-    <a href="#" class="bold">Your bold link text here</a>
-
-    <div class="bold">Some bold text</div>
-
-    <p align="center">Red paragraph</p>
-
-    <p>Some paragraph</p>
-
-    <p id="cursive">Your cursive text here</p>
 </body>
 </html>
