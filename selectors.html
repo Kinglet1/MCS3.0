@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            font-size: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            background: linear-gradient(to bottom, rgba(255,251,204,1) 0%,rgba(191,255,216,1) 100%);
+        }
+
+        td {
+            border: 1px solid #bbb;
+            padding: 30px;
+            text-align: center;
+        }
+
+        pre {
+            padding: 0;
+            margin: 0;
+        }
+
+        tr td:first-child,
+        tr td:last-child {
+            white-space: nowrap;
+        }
+
+        tr:first-child {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>Селектор</td>
+            <td>Описание</td>
+            <td>Пример</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td><b>Универсальный</b> селектор, применится к каждому элементу на странице</td>
+            <td>* {...}</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>Селектор <b>по тегу</b>, применится ко всем тегам X</td>
+            <td>a {...}</td>
+        </tr> 
+        <tr>
+            <td>.X</td>
+            <td>Селектор <b>по классу</b>, применится ко всем элементам с классом X</td>
+            <td>.classname {...}</td>
+        </tr> 
+        <tr>
+            <td>#X</td>
+            <td>Селектор <b>по id</b>, применится ко всем элементам с id X</td>
+            <td>#someId {...}</td>
+        </tr> 
+        <tr>
+            <td>[X="attr"]</td>
+            <td>Селектор <b>по атрибуту</b>, применится к элементам, у которых значение атрибута X = attr</td>
+            <td>[target="_blank"] {...}</td>
+        </tr> 
+
+        <tr>
+            <td>#X.Y</td>
+            <td><b>Комбинированный</b> селектор - для элементов, к которым применятся все перечисленные селекторы</td>
+            <td>a.classname[target="_blank"] {...}</td>
+        </tr>
+        <tr>
+            <td>X Y</td>
+            <td><b>Контекстный</b> селектор - для элементов У, вложенных в X</td>
+            <td>.wrapper p {...}</td>
+        </tr>
+        <tr>
+            <td>X > Y</td>
+            <td><b>Селектор дочерних элементов</b> - выберет только непосредственных потомков</td>
+            <td>.wrapper > p {...}</td>
+        </tr>
+        <tr>
+            <td>X + Y</td>
+            <td>Выберет ближайшего и <b>соседа</b> элемента X</td>
+            <td>.element + .sibling {...}</td>
+        </tr>
+        <tr>
+            <td>X ~ Y</td>
+            <td>Выберет всех <b>соседей</b> элемента X</td>
+            <td>.element ~ .sibling {...}</td>
+        </tr>
+    </table>
+</body>
+</html>
