@@ -1,4 +1,8 @@
-<!-- Необходимо отцентрировать иконку внутри пункта меню с помощью position: absolute -->
+<!--
+Сделайте так, чтобы солнышко крутилось
+Чтобы крутилось бесконечно, для потора используйте infinite
+Чтобы крутолось плавно, используйте временнУю функцию linear
+-->
 
 <!DOCTYPE html>
 <html>
@@ -6,39 +10,36 @@
     <meta charset="utf-8">
     <title>Girlpower</title>
 
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sun.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .menu__item {
-            padding: 40px;
-            border-bottom: 1px solid gray;
-            font-size: 20px;
+        /* Здесь будет ваш код */
+
+        @keyframes sun {
+
         }
 
-        /* Здесь будет ваш код */
+        .sun {
+
+        }
     </style>
 </head>
 
 <body>
-<ul class="menu">
-    <li class="menu__item">
-        <i class="fa fa-diamond fa-3x"></i>
-        Diamonds
-    </li>
-    <li class="menu__item">
-        <i class="fa fa-coffee fa-3x" aria-hidden="true"></i>
-        Coffee
-    </li>
-    <li class="menu__item">
-        <i class="fa fa-bell fa-3x" aria-hidden="true"></i>
-        Bells
-    </li>
-</ul>
+
+<div class="sun">
+    <div class="sun__body"></div>
+    <div class="sun__rays">
+        <div class="sun__ray"></div>
+        <div class="sun__ray"></div>
+        <div class="sun__ray"></div>
+        <div class="sun__ray"></div>
+        <div class="sun__ray"></div>
+        <div class="sun__ray"></div>
+        <div class="sun__ray"></div>
+        <div class="sun__ray"></div>
+    </div>
+</div>
 
 </body>
 </html>

@@ -1,8 +1,7 @@
 <!--
-Расположите попап по-центру окна.
-Для этого нужно найти ближайшего родителя с position, отличным от static, и спозиционировать попап абсолютно
-затем сместить попап вправо и вниз на половину размеров окна,
-затем поднять наверх и влево на половину размеров попапа.
+Сделайте для первого div-a в качестве фона картинку (можно взять с https://unsplash.it/)
+Для второго - линейный градиент (можно сгенерировать на http://www.colorzilla.com/gradient-editor/)
+Для третьего - радиальный градиент (можно сгенерировать на http://www.colorzilla.com/gradient-editor/)
 -->
 
 <!DOCTYPE html>
@@ -12,59 +11,20 @@
     <title>Girlpower</title>
 
     <style>
-        .popup {
+        div {
             width: 300px;
             height: 300px;
-            border: 1px solid #aaa;
+            border: 1px solid;
         }
-        .popup__inner {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            padding: 15px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        .popup__title {
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        .popup__close {
-            font-size: 30px;
-            line-height: 30px;
-            right: 5px;
-            top: 5px;
-            position: absolute;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        html, body {
-            height: 100%;
-        }
-        body {
-            position: relative;
-        }
-
         /* Здесь будет ваш код */
     </style>
 </head>
 
 <body>
-<div class="popup">
-    <div class="popup__inner">
-        <div class="popup__close">&times;</div>
-        <div class="popup__title">Title</div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
-        </p>
-    </div>
-</div>
+
+<div class="bg-img">Картинка</div>
+<div class="bg-linear-gradient">Линейный градиент</div>
+<div class="bg-radial-gradient">Радиальный градиент</div>
+
 </body>
 </html>
