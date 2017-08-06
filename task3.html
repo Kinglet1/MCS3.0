@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Girlpower</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div>
+        <p>
+            <span id="text">This is red</span>
+            paragraph
+        </p>
+    </div>
+</div>
+
+<p>
+    This is black paragraph
+</p>
+
+<script>
+    //Решите задачу, испольуя один из методов: children, find, parent, closest
+
+    //Все параграфы, которые являются потомками (не обязательно прямыми) элемента с классом 'wrapper'
+    $().css('color', 'red');
+
+    //Ближайший предок для элемента с id 'text'
+    $().parent().css('border', '1px solid');
+</script>
+</body>
+</html>

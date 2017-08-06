@@ -3,31 +3,46 @@
 <head>
     <meta charset="utf-8">
     <title>Girlpower</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
 
 <body>
-<!-- Выведем:
- document
- document.documentElement
- document.body
- document.getElementsByTagName('li')
- document.getElementsByClassName('paragraph')
- document.getElementsByName('some-name')
- document.getElementById('container');
- -->
-
+<p>
+    <span class="paragraph-red-text">May</span> 13th 2017
+</p>
 
 <ul>
-    <li>First</li>
-    <li>Second</li>
-    <li>Third</li>
+    <li>List item</li>
+    <li>Some more item</li>
+    <li id="red-item">the Force</li>
+    <li>the Best item</li>
 </ul>
 
-<p class="paragraph">Paragraph test</p>
+<div class="paragraph-red-text">Some paragraph with some text</div>
 
-<div id="container">Container inner</div>
+<div>
+    To be or not to
+    <b class="paragraph-red-text">be</b>
+    ?
+</div>
 
-<div name="some-name">Another container</div>
+<a href="#">I am</a><br>
+<a href="#" target="_blank">with you</a><br>
+<a href="#">You now I see</a><br>
+<a href="#">Keeping everything inside</a><br>
 
+
+<script>
+    //Напишите правильные селекторы
+    //Все теги <b>
+    $().css('color', 'red');
+    //Элементы с классом 'paragraph-red-text', лежащие внутри тегов <p>
+    $().css('color', 'red');
+    //Элемент с id 'red-item'
+    $().css('color', 'red');
+    //Ссылки, открывающиеся в новом окне
+    $().css('color', 'red');
+</script>
 </body>
 </html>
